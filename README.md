@@ -2,43 +2,46 @@
 Prva verzija tekstualnog editora kofiguriranog za programiranje u C++.
 
 
-<h1>Instalacija:</h1>
+## Instalacija:
 
 
-Instalacija Docker okruženja:
-```console
+Instalacija `Docker` okruženja:
+```sh
 wget -qO- https://get.docker.com/ | sudo sh && \
 sudo usermod -a -G docker $USER && \
 sudo shutdown -r 0
 ```
 Instalacija kontejnera:
-```console
+```
 wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install | sudo bash
 ```
+## Pokretanje:
 
 Kontejner je moguće pokretati putem komande:
-```console
+```
 sudo -E start_container
 ```
 
-Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera opt1 na sljedeći način:
-```shell
+Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera `opt1` na sljedeći način:
+```
 source /opt1/script.sh
 ```
-Vim se sada u novom kontejneru pokreće komandom e1.
 
+`VIM` se sada u novom kontejneru pokreće komandom: `e1`
 
-Instalacija TMUX-a nije neophodna, ali dosta olšksava rad u kontejneru.
+## TMUX:
 
-TMUX:
-```console
+Instalacija `TMUX-a` nije neophodna, ali dosta olakšava rad u kontejneru.
+
+```
 sudo apt-get update
 sudo apt-get install tmux
-
-cd ~/
+```
+Uređivanje `.bashrc` file-a:
+```
 gedit .bashrc
 ```
-Zatim na kraj .bashrc file-a dodati sljedeci kod:
+Zatim na kraj `.bashrc` file-a dodati sljedeci kod:
 
 ```shell
 if [ -d "/opt1/" ]; then
