@@ -1,4 +1,4 @@
 #!/bin/bash 
 docker pull kenandervisagic/vim-container:latest
 wget 'https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/start_container' -O /usr/local/bin/start_container && chmod +x /usr/local/bin/start_container
-wget 'https://github.com/kenandervisagic/vim-dark-mode/blob/main/vim-dark-kenan/bin/fzy?inline=false-o' -O /usr/local/bin/fzy && chmod +x /usr/local/bin/fzy
+wget 'https://github.com/kenandervisagic/vim-dark-mode/raw/main/vim-dark-kenan/bin/fzy' -O /usr/local/bin/fzy && chmod +x /usr/local/bin/fzy
