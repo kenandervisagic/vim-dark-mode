@@ -15,4 +15,14 @@ sudo shutdown -r 0
 
 wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install | sudo bash
 
+Kontejner je moguće pokretati putem komande:
+sudo -E start_container
+
+
+Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera opt1 na sljedeći način:
+source /opt1/script.sh
+
+vim se sada u novom kontejneru pokreće komandom e1
+
+
 
