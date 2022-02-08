@@ -48,8 +48,9 @@ if [ -d "/opt1/" ]; then
 fi
 ```
 Ovime se automatizira navođenje source-a svaki put kada se kontejner pokrene, te više nije potrebno kucati:
+```
 source /opt1/script.sh
-
+```
 
 
 
