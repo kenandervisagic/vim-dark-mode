@@ -5,13 +5,13 @@ Prva verzija tekstualnog editora kofiguriranog za programiranje u C++.
 <h1>Instalacija:</h1>
 
 
-Instalacija docker okruženja:
+Instalacija Docker okruženja:
 ```console
 wget -qO- https://get.docker.com/ | sudo sh && \
 sudo usermod -a -G docker $USER && \
 sudo shutdown -r 0
 ```
-Instalacija VIM tekstualnog editora:
+Instalacija kontejnera:
 ```console
 wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install | sudo bash
 ```
