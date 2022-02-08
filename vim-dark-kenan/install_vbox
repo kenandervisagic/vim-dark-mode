@@ -1,6 +1,0 @@
-#!/bin/bash 
-docker pull registry.gitlab.com/amer.hasanovic/fet_base
-wget 'https://gitlab.com/amer.hasanovic/fet_base/raw/master/runC' -O /usr/local/bin/start_container && chmod +x /usr/local/bin/start_container
-wget 'https://gitlab.com/amer.hasanovic/fet_base/raw/master/bashrc' -O $HOME/.bashrc 
-wget 'https://gitlab.com/amer.hasanovic/fet_base/raw/master/bin/fzy?inline=false-o' -O /usr/local/bin/fzy && chmod +x /usr/local/bin/fzy
-wget 'https://gitlab.com/amer.hasanovic/fet_base/raw/master/bin/vis?inline=false-o' -O /usr/local/bin/vis && chmod +x /usr/local/bin/vis
