@@ -2,9 +2,8 @@
 Prva verzija tekstualnog editora kofiguriranog za programiranje u C++.
 
 
-Instalacija:
+<h1>Instalacija:</h1>
 
-Po pokretanju Linux OS-a u nekom od prethodno predloženih okruženja, radi instalacije Docker paketa otvoriti Linux terminal i upisati sljedeće komande:
 
 Instalacija docker okruženja:
 ```console
