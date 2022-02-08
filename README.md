@@ -1,7 +1,6 @@
 # VIM-dark-mode
-Prva verzija dark mode tekstualnog editora kofiguriranog za programiranje u C++.
+Prva verzija tekstualnog editora kofiguriranog za programiranje u C++.
 
-Program je za licnu upotrebu.
 
 Instalacija:
 
@@ -22,7 +21,10 @@ sudo -E start_container
 Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera opt1 na sljedeći način:
 source /opt1/script.sh
 
-vim se sada u novom kontejneru pokreće komandom e1
+Vim se sada u novom kontejneru pokreće komandom e1.
+
+Program je za licnu upotrebu. 
+
 
 
 
