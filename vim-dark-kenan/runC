@@ -1,0 +1,21 @@
+#!/bin/bash -e
+LIST=$(docker images | tail -n +2 | cut -d " " -f1 | sort | uniq)
+IMAGE=$(echo "$LIST" | fzy)
+DI=$(sort <(echo "$LIST") <(echo "$IMAGE") | uniq -d)
+[[ -z "$DI" ]] && echo "The selected image is not available!" && exit
+
+docker run -it --rm \
+	--user=$(id -u):$(id -g) \
+	--env="DISPLAY" \
+	--volume="/etc/group:/etc/group:ro" \
+	--volume="/etc/passwd:/etc/passwd:ro" \
+	--volume="/etc/shadow:/etc/shadow:ro" \
+	--volume="/etc/shadow-:/etc/shadow-:ro" \
+	--volume="/etc/timezone:/etc/timezone:ro" \
+	--volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+        --volume="/dev:/dev:rw" \
+        --volume="$HOME:$HOME" \
+        --network="host" \
+        -w="$PWD" \
+        --privileged \
+	$IMAGE /bin/bash --login 

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=UrxvtDockerShell
+Exec=/usr/bin/urxvt -e /home/amer/program1/bin/runK 
+Icon=/usr/share/icons/HighContrast/scalable/apps/utilities-terminal.svg
+Type=Application
