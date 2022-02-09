@@ -6,7 +6,7 @@ CONF='/opt/vim_files'
 
 HOMEDIR='/home/'$CONTAINER_USERNAME
 GROUP_ID=$SUDO_GID
-USER_ID=999
+USER_ID=1005
 LIST=$(docker images | tail -n +2 | cut -d " " -f1)
 IMAGE=$(echo "$LIST" | fzy)
 DI=$(sort <(echo "$LIST") <(echo "$IMAGE") | uniq -d)
@@ -17,7 +17,7 @@ create_user_cmd()
   echo \
     groupadd -f -g $GROUP_ID $CONTAINER_GROUPNAME '&&' \
     groupadd -f -g 57 kvm '&&' \
-    useradd -u 999 -g $CONTAINER_GROUPNAME $CONTAINER_USERNAME '&&' \
+    useradd -u 1005 -g $CONTAINER_GROUPNAME $CONTAINER_USERNAME '&&' \
     usermod -a -G kvm $CONTAINER_USERNAME '&&' \
     chown root:kvm /dev/kvm '&&' \
     echo "\"$CONTAINER_USERNAME ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers.d/$CONTAINER_USERNAME" '&&' \
