@@ -27,6 +27,7 @@ create_user_cmd()
     cp -n /etc/skel/.bashrc $HOMEDIR/
 }
 
+
 execute_as_cmd()
 {
   echo \
