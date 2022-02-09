@@ -18,7 +18,7 @@ create_user_cmd()
     groupadd -f -g $GROUP_ID $CONTAINER_GROUPNAME '&&' \
     groupadd -f -g 57 kvm '&&' \
     useradd -u $USER_ID -g $CONTAINER_GROUPNAME $CONTAINER_USERNAME '&&' \
-    usermod -a -o -G kvm $CONTAINER_USERNAME '&&' \
+    usermod -a -G kvm $CONTAINER_USERNAME '&&' \
     chown root:kvm /dev/kvm '&&' \
     mkdir --parent $HOMEDIR '&&' \
     mkdir -p '/mnt'$HOMEDIR '&&' \
