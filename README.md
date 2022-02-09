@@ -59,6 +59,9 @@ source /opt1/script.sh
 
 Program je za ličnu upotrebu. 
 
+Version:
+v1.0.0
+
 
 
 
