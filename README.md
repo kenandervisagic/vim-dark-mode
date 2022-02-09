@@ -19,7 +19,7 @@ wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main
 
 Kontejner je moguće pokretati putem komande:
 ```
-sudo -E start_container
+sudo -E pokreni_container
 ```
 
 Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera `opt1` na sljedeći način:
