@@ -12,6 +12,9 @@ IMAGE=$(echo "$LIST" | fzy)
 DI=$(sort <(echo "$LIST") <(echo "$IMAGE") | uniq -d)
 [[ -z "$DI" ]] && echo "The selected image is not available!" && exit
 
+RUN groupmod -g 1001 node \
+  && usermod -u 1001 -g 1001 node
+
 create_user_cmd()
 {
   echo \
