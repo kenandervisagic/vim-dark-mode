@@ -26,8 +26,18 @@ Nakon što se kontejner starta potrebno je source-ati skriptu iz foldera `opt1` 
 ```
 source /opt1/script.sh
 ```
+<br>
 
-`VIM` se sada u novom kontejneru pokreće komandom: `e1`
+`VIM` se sada u novom kontejneru pokreće komandom: 
+```console
+e1
+```
+<br>
+Kontejner se zatvara komandom:
+
+```
+exit
+```
 
 ## TMUX:
 
