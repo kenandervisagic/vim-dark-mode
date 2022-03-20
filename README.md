@@ -11,6 +11,8 @@ wget -qO- https://get.docker.com/ | sudo sh && \
 sudo usermod -a -G docker $USER && \
 sudo shutdown -r 0
 ```
+<br>
+
 ## Instalacija kontejnera:
 ```
 wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install | sudo bash
