@@ -2,7 +2,7 @@
 Prva verzija tekstualnog editora kofiguriranog za programiranje u C++.
 
 
-## Instalacija (Ubuntu OS):
+## Instalacija Docker-a (Ubuntu OS):
 
 
 Instalacija `Docker` okruženja:
