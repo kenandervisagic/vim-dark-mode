@@ -69,8 +69,7 @@ source /opt1/script.sh
 ## Surprise:
 ```
 wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/install_funky.sh | sudo bash
-
-
+```https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/install_funky.sh
 
 Program je za ličnu upotrebu. 
 
