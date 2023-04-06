@@ -15,7 +15,7 @@ sudo shutdown -r 0
 
 ## Instalacija kontejnera:
 ```
-wget -q -O- https://raw.githubusercontent.com/kenandervisagic/vim-dark-mode/main/vim-dark-kenan/install | sudo bash
+wget -q -O- https://gitlab.com/kenandervisagic/vim-dark-mode/-/raw/main/vim-dark-kenan/install | sudo bash
 ```
 ## Pokretanje:
 
